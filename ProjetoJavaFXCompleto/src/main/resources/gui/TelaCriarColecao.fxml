@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="gui.ControladorCriarColecao"
+      alignment="CENTER" spacing="10">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Criar Coleção" style="-fx-font-size: 18px;" />
+
+    <TextField fx:id="campoNomeColecao" promptText="Nome da coleção" />
+    <TextField fx:id="campoAutor" promptText="Autor (deve estar nas entradas)" />
+    <TextField fx:id="campoLimite" promptText="Limite de entradas (número)" />
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Tipo:" />
+        <ChoiceBox fx:id="choiceTipo" />
+    </HBox>
+
+    <Button text="Criar" onAction="#handleCriar" />
+    <Button text="Voltar" onAction="#handleVoltar" />
+</VBox>

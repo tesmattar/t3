@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="gui.ControladorTelaAdicionarEntradaColecao">
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            
+            <Label text="Adicionar Entrada à Coleção" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Coleção:" />
+                <ComboBox fx:id="comboColecoes" prefWidth="200" />
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Entrada:" />
+                <ComboBox fx:id="comboEntradas" prefWidth="200" />
+            </HBox>
+
+            <Button text="Adicionar" onAction="#handleAdicionar" maxWidth="150" />
+
+        </VBox>
+    </center>
+</BorderPane>
